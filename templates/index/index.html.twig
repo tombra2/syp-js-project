@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+    <h1>This is a ohmmmmm Calc</h1>
+    <form>
+        <label for="r1" >R1</label>
+        <input type="text" id="r1">
+        <br>
+        <label for="r2">R2</label>
+        <input type="text" id="r2">
+        <br>
+        <label for="r3">R2</label>
+        <input type="text" id="r3">
+        <br>
+
+
+        <button type="button" id="btn-s">Serienschaltung</button>
+        <br>
+
+        <button type="button" id="btn-p">Parallelschaltung</button>
+    </form>
+
+    <p id="result"></p>
+
+
+
+
+    <form action="">
+        <div><input type="text" id="ustart" placeholder="Startspannung"></div>
+        <div><input type="text" id="ustop" placeholder="Stopspannung"></div>
+        <div><input type="text" id="step" placeholder="Steps"></div>
+        <div>
+            <button id="show-table">Berechnen</button>
+        </div>
+    </form>
+
+    <table id="resi">
+
+    </table>
+
+
+{% endblock %}
