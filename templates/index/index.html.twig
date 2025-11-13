@@ -3,6 +3,8 @@
 {% block title %}Hello IndexController!{% endblock %}
 
 {% block body %}
+
+   <div data-controller="calculation"></div>
     <h1>This is a ohmmmmm Calc</h1>
     <form>
         <label for="r1" >R1</label>
@@ -19,26 +21,24 @@
         <button type="button" id="btn-s">Serienschaltung</button>
         <br>
 
-        <button type="button" id="btn-p">Parallelschaltung</button>
+        <button type="button" class="btn btn-outline-secondary" id="btn-p">Parallelschaltung</button>
     </form>
 
     <p id="result"></p>
 
 
 
+ <div data-controller="resistor">
+     <form action="">
+         <div><input type="text" id="resistor" placeholder="Widerstand (Ohm)"></div>
+         <div><input type="text" id="ustart" placeholder="Startspannung"></div>
+         <div><input type="text" id="ustop" placeholder="Stopspannung"></div>
+         <div><input type="text" id="step" placeholder="Steps"></div>
+         <div>
+             <button id="show-table">Berechnen</button>
+         </div>
+     </form>
 
-    <form action="">
-        <div><input type="text" id="ustart" placeholder="Startspannung"></div>
-        <div><input type="text" id="ustop" placeholder="Stopspannung"></div>
-        <div><input type="text" id="step" placeholder="Steps"></div>
-        <div>
-            <button id="show-table">Berechnen</button>
-        </div>
-    </form>
-
-    <table id="resi">
-
-    </table>
-
+    <table id="resi"></table>
 
 {% endblock %}
