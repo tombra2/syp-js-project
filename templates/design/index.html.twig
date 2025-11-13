@@ -3,5 +3,39 @@
 {% block title %}HTML Design{% endblock %}
 
 {% block body %}
+    <div class="container-fluid">
+        <h1 class="fw-bold">HTML Übungsseite 1</h1>
+        <h2 class="text-danger">Einfaches Element</h2>
+        <p> Text mit unterschiedlichen Schriften und Schriftarten. Text kann <b>fett</b> <i>kursiv</i>
+            <u>unterstrichen</u> oder <s>durchgestrichen</s> sein. Eventuell auch <strong>großer als normal</strong>
+            oder doch <small>kleiner als normal.</small> Vielleicht auch <sup>hochgestellt</sup> oder
+            <sub>tiefgestellt</sub></p>
+        <div class="box">
+            <p>Textabschnitte können auch einen ander Hintergrundfarbe haben. andere Schriftfarben und Schriftarten.
+                Man spricht davon von der Font-Family.
+            </p>
+            <p>Zusätzlich kann auch die Schriftgroße geändert werden und wie hier im Absatz plötzlich
+                <bigger>großer oranger Text</bigger>
+                stehen
+            </p>
 
+        </div>
+        <h2 class="text-danger p-2">Tabellen</h2>
+        <p>Tabellen sind wichtige Layout-Elemente in HTML</p>
+        <p>Nachstehend ein paar Beispiele:</p>
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Einfache Tabellen</h3>
+                <table class="table-bordered">
+                    <tr><td>1</td>
+                        <td>2</td>
+                        <td>2</td></tr>
+                    <tr><td>2</td></tr>
+                    <tr><td>3</td></tr>
+                </table>
+            </div>
+            <div class="col-6"><h3>Tabellen mit Farben</h3></div>
+        </div>
+    </div>
 {% endblock %}

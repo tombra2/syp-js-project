@@ -11,6 +11,7 @@ final class DesignController extends AbstractController
     #[Route('/design', name: 'app_design')]
     public function index(): Response
     {
+
         return $this->render('design/index.html.twig', [
             'controller_name' => 'DesignController',
         ]);
