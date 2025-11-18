@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HTML Design{% endblock %}
+
+{% block body %}
+    <div class="container mt-4">
+        <div class="row">
+            <h1>HTML Übungsseite 2</h1>
+            <div class="col">
+                <h2 class="text-danger">Links</h2>
+                <p>Links verknüpfen geht auch auf externe Seiten</p>
+                <ul>
+                    <li><a href="https://www.htl-klu.at">HTL Homepage http://www.htl-klu.at</a></li>
+                    <li><a href="https://www.google.at">Google in einem eigenen Fenster/Tab offenen</a></li>
+                </ul>
+                <p>Es gibt:</p>
+                <ul>
+                    <li>ungeordnete Listen mit Punkten</li>
+                    <li>geordnete Listen mit Zahlen</li>
+                </ul>
+
+                <p>Beispiel für eine geordnete Liste:</p>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>PHP 😀</li>
+                </ol>
+            </div>
+            <div class="col-6">
+                <h2 class="text-danger">Bilder</h2>
+                <p>Und natürlich dürfen Bilder nicht fehlen</p>
+                <img class="img-thumbnail" src="{{ asset('img/2025-07-14 09.14.35.jpg') }}" alt="delta">
+                <a href="{{ path('app_design') }}">Link zur ersten Seite</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

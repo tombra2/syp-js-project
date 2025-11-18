@@ -3,7 +3,7 @@
 {% block title %}HTML Design{% endblock %}
 
 {% block body %}
-    <div class="container-fluid">
+    <div class="container">
         <h1 class="fw-bold">HTML Übungsseite 1</h1>
         <h2 class="text-danger">Einfaches Element</h2>
         <p> Text mit unterschiedlichen Schriften und Schriftarten. Text kann <b>fett</b> <i>kursiv</i>
@@ -20,22 +20,145 @@
             </p>
 
         </div>
-        <h2 class="text-danger p-2">Tabellen</h2>
-        <p>Tabellen sind wichtige Layout-Elemente in HTML</p>
-        <p>Nachstehend ein paar Beispiele:</p>
+        <h2 class="text-danger ">Tabellen</h2>
+        <p>Tabellen sind wichtige Layout-Elemente in HTML <br>Nachstehend ein paar Beispiele:</p>
 
         <div class="row">
             <div class="col-6">
                 <h3>Einfache Tabellen</h3>
-                <table class="table-bordered">
-                    <tr><td>1</td>
-                        <td>2</td>
-                        <td>2</td></tr>
-                    <tr><td>2</td></tr>
-                    <tr><td>3</td></tr>
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <td>Anna</td>
+                        <td>Benjamin</td>
+                        <td>Celine</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel</td>
+                        <td>Elvis</td>
+                        <td>Franziskus</td>
+                    </tr>
+                    <tr>
+                        <td>Gerry</td>
+                        <td>Hans</td>
+                        <td>Ingrid</td>
+                    </tr>
+                </table>
+                <h3>Tabelle mit Kopfzeile und Spaltenbreiten</h3>
+                <table class="table-bordered table table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th>Schüler</th>
+                        <th>Klasse</th>
+                        <th>Kat.Nr</th>
+                        <th>Note</th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <th>Fred</th>
+                        <td>3CHEL</td>
+                        <td>23</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Martin</th>
+                        <td>4AHEL</td>
+                        <td>8</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+                <h3>Tabelle mit verbundenen Spalten</h3>
+                <table class="table-bordered table table-hover table-striped">
+                    <tr>
+                        <th></th>
+                        <th>1.Std</th>
+                        <th>2.Std</th>
+                        <th>3.Std</th>
+                        <th>4.Std</th>
+                    </tr>
+                    <tr>
+                        <th>Montag</th>
+                        <td colspan="2">AM</td>
+                        <td>HWE</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <th>Dienstag</th>
+                        <td colspan="3">BESP</td>
+                        <td>E</td>
+                    </tr>
                 </table>
             </div>
-            <div class="col-6"><h3>Tabellen mit Farben</h3></div>
+            <div class="col-6"><h3>Tabellen mit Farben</h3>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Color Name</th>
+                        <th>Color Code</th>
+                        <th>Color Name</th>
+                        <th>Color Code</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="bg-danger">Red</td>
+                        <td>#FF000</td>
+                        <td>White</td>
+                        <td>#FFFFF</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-info">Cyan</td>
+                        <td>#00FFF</td>
+                        <td class="bg-silver">Silver</td>
+                        <td>#C0C0C0</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-blue">Blue</td>
+                        <td>#0000FF</td>
+                        <td class="bg-gray">Gray or Grey</td>
+                        <td>#808080</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-darkblue">Darkblue</td>
+                        <td>#0000A0</td>
+                        <td class="bg-black">Black</td>
+                        <td>#000000</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-lightblue">LightBlue</td>
+                        <td>#ADD8E6</td>
+                        <td class="bg-orange">Orange</td>
+                        <td>#FFA500</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-purple">Purple</td>
+                        <td>#800080</td>
+                        <td class="bg-brown">Brown</td>
+                        <td>#A52A2A</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-yellow">Yellow</td>
+                        <td>#FFFF00</td>
+                        <td class="bg-maroon">Maroon</td>
+                        <td>#800000</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-lime">Lime</td>
+                        <td>#00FF00</td>
+                        <td class="bg-green">Green</td>
+                        <td>#008000</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-magenta">Magenta</td>
+                        <td>#FF00FF</td>
+                        <td class="bg-olive">Olive</td>
+                        <td>#808000</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h2 class="text-danger">Links</h2>
+                <p>Mit Links sind Webseiten miteinander verknüpft.</p>
+                <a href="{{ path('app_second') }}">Link zur zweiten Seite</a>
+            </div>
         </div>
     </div>
 {% endblock %}

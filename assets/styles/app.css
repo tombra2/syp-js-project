@@ -11,3 +11,61 @@ bigger{
 h3{
     color: #800000;
 }
+.bg-red {
+    background-color: #FF0000  !important;
+}
+
+.bg-silver {
+    background-color: #C0C0C0 !important;
+}
+
+.bg-blue {
+    background-color: #0000FF !important;
+}
+
+.bg-gray {
+  background-color: #808080 !important;
+}
+
+.bg-darkblue {
+    background-color: #0000A0 !important;
+    color: white !important;
+}
+
+.bg-lightblue {
+    background-color: #ADD8E6 !important;
+}
+
+.bg-purple {
+    background-color: #800080 !important;
+}
+
+.bg-yellow {
+    background-color: #FFFF00 !important;
+}
+.bg-lime {
+background-color: #00FF00  !important;
+}
+.bg-magenta {
+    background-color: #FF00FF!important;
+}
+.bg-black {
+    background-color: black !important;
+    color: white !important;
+}
+.bg-orange {
+    background-color: orange !important;
+}
+.bg-brown {
+    background-color: brown !important;
+}
+
+.bg-maroon {
+    background-color: maroon !important;
+}
+.bg-green {
+    background-color: green !important;
+}
+.bg-olive {
+    background-color: olivedrab !important;
+}

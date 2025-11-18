@@ -16,4 +16,14 @@ final class DesignController extends AbstractController
             'controller_name' => 'DesignController',
         ]);
     }
+
+
+    #[Route('/second', name: 'app_second')]
+    public function second(): Response
+    {
+
+        return $this->render('design/second.html.twig', [
+            'controller_name' => 'DesignController',
+        ]);
+    }
 }
